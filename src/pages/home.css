@@ -1,0 +1,34 @@
+#content {
+    padding: 0 50px;
+}
+
+@media (max-width: 1300px) {
+    #content {
+        padding: 0;
+    }
+}
+
+#main-column {
+    /* Layout */
+    width: 75%;
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+#side-column {
+    /* Layout */
+    width: 20%;
+    max-width: 320px;
+    height: 100%;
+    flex-direction: column;
+    float: right;
+    gap: 32px;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    #side-column {
+        display: none;
+    }
+}
